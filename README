@@ -1,3 +1,5 @@
-Flexigrid is a convenient way to display, sort and search lists the Ajax way in Rails.
+<html>
+<a href="http://flexigrid.info/">Flexigrid</a> is a convenient way to display, sort and search lists the Ajax way in Rails.
 
 The purpose of this project is to give a sample, a starter if you want to try Flexigrid and don't known where to start from.
+</html>
