@@ -1,0 +1,39 @@
+<h1>Listing people</h1>
+
+<table id="flex1"></table>
+
+<script type="text/javascript">
+
+			$("#flex1").flexigrid(
+			{
+			method: 'GET',
+			url: 'people.js',
+			dataType: 'json',
+			colModel : [
+				{display: 'Name', name : 'name', width : 140, sortable : true, align: 'left'},
+				{display: 'Firstname', name : 'firstname', width : 180, sortable : true, align: 'left'},
+				{display: 'Date of birth', name : 'date_of_birth', width : 120, sortable : true, align: 'center'},
+				{display: 'A Button', name : 'bouton', width : 120, sortable : true, align: 'center'},
+				],
+			searchitems : [
+				{display: 'Name', name : 'name', isdefault: true}
+				],
+			sortname: "name",
+			sortorder: "asc",
+			usepager: true,
+			title: 'The people',
+			rp: 10,
+			//pagestat: "Affichage des lignes {from} à {to} sur {total}",
+			showTableToggleBtn: true,
+      // width: 700, ==> auto par défaut
+			height: 400,
+			//findtext: 'Chercher',
+			//procmsg: 'En cours, veuillez patienter...',
+			//nomsg: 'Aucun résultat',
+			//outof: 'sur'
+			}
+			);
+
+</script>
+
+<%= link_to 'New Person', new_person_path %>
